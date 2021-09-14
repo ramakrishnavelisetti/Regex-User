@@ -1,30 +1,29 @@
 package com.bdlz.regexuser;
 
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Author: Ramakrishna
  * Program: RegexUserRegistration
  * Since: 14/9/21
  */
-public class RegexUserRegistration {
+public class RegexUserRegistration extends UserDetails {
+    static Scanner scanner = new Scanner(System.in);
+    static String firstName,lastName;
 
     public static void main(String[] args) {
-        System.out.println("Enter Your First Name");
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
-        String regex = "^[A-Z]{1}[a-z]{2,}$";
-
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(input);
-
-        if (matcher.matches()) {
-            System.out.println("Valid");
-        }else {
-            System.out.println("Invalid");
-        }
+    userFirstName();
+    userLastName();
+    System.out.println(firstName + " " + lastName);
     }
-
+    public static void userFirstName() {
+        System.out.println("Enter your First Name");
+        firstName = scanner.next();
+        UserDetails.firstname(firstName);
+    }
+    public static void userLastName() {
+        System.out.println("Enter your Last Name");
+        lastName = scanner.next();
+        UserDetails.lastname(lastName);
+    }
 }
