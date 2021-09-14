@@ -2,6 +2,8 @@ package com.bdlz.regexuser;
 
 import java.util.Scanner;
 
+import static com.bdlz.regexuser.UserDetails.mobilenum;
+
 /**
  * Author: Ramakrishna
  * Program: RegexUserRegistration
@@ -9,13 +11,14 @@ import java.util.Scanner;
  */
 public class RegexUserRegistration extends UserDetails {
     static Scanner scanner = new Scanner(System.in);
-    static String firstName,lastName,emailId,mobileNum;
+    static String firstName,lastName,emailId,mobileNum,password;
 
     public static void main(String[] args) {
-    userFirstName();
-    userLastName();
-    userEmailId();
-    userMobileNum();
+//    userFirstName();
+//    userLastName();
+//    userEmailId();
+//    userMobileNum();
+    userPassword();
         System.out.println(firstName + " " + lastName + '\n'
                 + emailId + '\n' + mobileNum);
     }
@@ -38,5 +41,10 @@ public class RegexUserRegistration extends UserDetails {
         System.out.println("Enter your MobileNumber");
         mobileNum = scanner.next();
         UserDetails.mobilenum(mobileNum);
+    }
+    public static void userPassword() {
+        System.out.println("Enter your Password");
+        password = scanner.next();
+        UserDetails.password(password);
     }
 }
