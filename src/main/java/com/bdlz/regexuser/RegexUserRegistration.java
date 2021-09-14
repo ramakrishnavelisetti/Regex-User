@@ -2,7 +2,6 @@ package com.bdlz.regexuser;
 
 import java.util.Scanner;
 
-import static com.bdlz.regexuser.UserDetails.mobilenum;
 
 /**
  * Author: Ramakrishna
