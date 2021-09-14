@@ -25,5 +25,16 @@ public class UserDetails {
             System.out.println("Invalid");
         }
     }
+    public static void emailid(String emailId) {
+        //email abc.xyz@bl.co
+        String regex = "^[a-z0-9]+([_+-.][0-9a-z]+)*@[a-z]+.[a-z]{2,3}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(emailId);
+        if (matcher.matches()) {
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid");
+        }
+    }
 }
 
