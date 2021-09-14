@@ -14,10 +14,10 @@ public class RegexUserRegistration extends UserDetails {
     static String firstName,lastName,emailId,mobileNum,password;
 
     public static void main(String[] args) {
-//    userFirstName();
-//    userLastName();
-//    userEmailId();
-//    userMobileNum();
+    userFirstName();
+    userLastName();
+    userEmailId();
+    userMobileNum();
     userPassword();
         System.out.println(firstName + " " + lastName + '\n'
                 + emailId + '\n' + mobileNum);
