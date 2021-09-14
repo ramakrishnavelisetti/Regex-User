@@ -9,13 +9,15 @@ import java.util.Scanner;
  */
 public class RegexUserRegistration extends UserDetails {
     static Scanner scanner = new Scanner(System.in);
-    static String firstName,lastName,emailId;
+    static String firstName,lastName,emailId,mobileNum;
 
     public static void main(String[] args) {
     userFirstName();
     userLastName();
     userEmailId();
-        System.out.println(firstName + " " + lastName + '\n' + emailId);
+    userMobileNum();
+        System.out.println(firstName + " " + lastName + '\n'
+                + emailId + '\n' + mobileNum);
     }
     public static void userFirstName() {
         System.out.println("Enter your First Name");
@@ -31,5 +33,10 @@ public class RegexUserRegistration extends UserDetails {
         System.out.println("Enter your EmailId");
         emailId = scanner.next();
         UserDetails.emailid(emailId);
+    }
+    public static void userMobileNum() {
+        System.out.println("Enter your MobileNumber");
+        mobileNum = scanner.next();
+        UserDetails.mobilenum(mobileNum);
     }
 }
