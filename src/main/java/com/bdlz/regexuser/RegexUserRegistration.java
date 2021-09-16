@@ -24,26 +24,26 @@ public class RegexUserRegistration extends UserDetails {
     public static void userFirstName() {
         System.out.println("Enter your First Name");
         firstName = scanner.next();
-        UserDetails.firstname(firstName);
+        firstname(firstName);
     }
     public static void userLastName() {
         System.out.println("Enter your Last Name");
         lastName = scanner.next();
-        UserDetails.lastname(lastName);
+        lastname(lastName);
     }
     public static void userEmailId() {
         System.out.println("Enter your EmailId");
         emailId = scanner.next();
-        UserDetails.emailid(emailId);
+        emailid(emailId);
     }
     public static void userMobileNum() {
         System.out.println("Enter your MobileNumber");
         mobileNum = scanner.next();
-        UserDetails.mobilenum(mobileNum);
+        mobilenum(mobileNum);
     }
     public static void userPassword() {
         System.out.println("Enter your Password");
         password = scanner.next();
-        UserDetails.password(password);
+        password(password);
     }
 }
