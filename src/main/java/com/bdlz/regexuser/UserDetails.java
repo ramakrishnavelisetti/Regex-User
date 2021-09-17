@@ -37,7 +37,7 @@ public class UserDetails {
         }
     }
     public static void mobilenum(String mobileNum) {
-        regex = "^[0-9]{2}[0-9]{10}$";
+        regex = "^[0-9]{2}\\s{1}[0-9]{10}$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(mobileNum);
         if (matcher.matches()) {
